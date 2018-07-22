@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#004D98"
+    tools:context="buta_warna.imk.kelompok12.FragmentPengobatan">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#004D98">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/atas"
+        android:textColor="#ffff"
+        android:text="REKOMENDASI PEKERJAAN"
+        android:textSize="8pt"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="20dp"
+        android:id="@+id/kiri"
+        android:textColor="#ffff"
+        android:layout_below="@id/atas"
+        android:layout_height="match_parent"
+        />
+
+    <me.biubiubiu.justifytext.library.JustifyTextView
+        android:id="@+id/textView1"
+        android:layout_toRightOf="@+id/kiri"
+        android:layout_below="@id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="-5dp"
+        android:text="         Berikut rekomendasi pekerjaan untuk orang buta warna:
+        \n1.Guru atau Dosen (non Kimia, non kedokteran, non Fisika/Elektronika)
+\n2. Akuntan Publik
+\n3. Pengacara
+\n4. Pengusaha / Wirausaha
+\n5. Marketing
+\n6. Atlet Olahraga
+\n7. Pekerjaan Office Based (akunting, administrasi, receptionist, HRD dan legal)
+\n8. Public Relation
+\n9. Keamanan dan kebersihan\n
+"
+        android:textStyle="bold"
+        android:textSize="6pt"
+        android:textColor="#ffff" />
+
+    </RelativeLayout>
+</ScrollView>

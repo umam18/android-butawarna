@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="buta_warna.imk.kelompok12.AboutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/d16">
+
+        <ImageView
+            android:layout_width="@dimen/d150"
+            android:layout_height="@dimen/d150"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/d16"
+            android:textStyle="bold"
+            android:text="IMK Kelompok 12"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/d8"
+            android:background="@color/primary_dark"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d16"
+            android:textStyle="bold"
+            android:text="Aplikasi Buta Warna"/>
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:text="Sebuah Aplikasi Android yang mengenalkan tentang buta warna. Mulai dari Pengertian, Penyebab, Pengelompokkan dan Rekomendasi Pekerjaan serta terdapat juga simulasi dengan Metode Ishihara"
+            android:layout_marginTop="@dimen/d8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/d8"
+            android:background="@color/primary_dark"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d16"
+            android:textStyle="bold"
+            android:text="@string/developer"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d8"
+            android:text="Chairul Umam Achmad (M0515006)"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Noor Azizah Mosaik Suni (M0515029)" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Salsabila Fauzia Shabihah (M0515036)" />
+
+    </LinearLayout>
+
+</ScrollView>

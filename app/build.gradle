@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 26
+    buildToolsVersion '27.0.3'
+    lintOptions {
+        disable 'MissingTranslation'
+    }
+    signingConfigs {
+        myConfig {
+            storeFile file("other.keystore")
+            storePassword "android"
+            keyAlias "androidotherkey"
+            keyPassword "android"
+        }
+        defaultConfig {
+            applicationId "buta_warna.imk.kelompok12"
+            minSdkVersion 16
+            targetSdkVersion 26
+            versionCode 1
+            versionName "1.0"
+            testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        }
+        buildTypes {
+            release {
+                signingConfig signingConfigs.myConfig
+                minifyEnabled true
+                debuggable false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            }
+        }
+    }
+    dependencies {
+        compile 'me.biubiubiu.justifytext:library:1.1'
+        compile fileTree(include: ['*.jar'], dir: 'libs')
+        androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+            exclude group: 'com.android.support', module: 'support-annotations'
+        })
+        compile "com.android.support:appcompat-v7:26.1.0"
+        compile 'com.android.support:support-v4:26.+'
+        testCompile 'junit:junit:4.12'
+    }
+    defaultConfig {
+        minSdkVersion 18
+        signingConfig signingConfigs.myConfig
+    }
+    productFlavors {
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.myConfig
+            renderscriptDebuggable true
+        }
+    }
+}
+dependencies {
+}

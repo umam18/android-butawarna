@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D91E18"
+    tools:context="buta_warna.imk.kelompok12.FragmentPengertian">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#D91E18">-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/atas"
+        android:textColor="#ffff"
+        android:text="PENGERTIAN"
+        android:textSize="8pt"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_height="40dp"
+        />
+
+    <TextView
+        android:layout_width="20dp"
+        android:id="@+id/kiri"
+        android:textColor="#ffff"
+        android:layout_below="@id/atas"
+        android:layout_height="match_parent"
+        />
+
+    <me.biubiubiu.justifytext.library.JustifyTextView
+        android:id="@+id/textView1"
+        android:layout_toRightOf="@+id/kiri"
+        android:layout_below="@id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="-5dp"
+        android:text="          Buta warna adalah kekurangan penglihatan untuk membedakan warna yang disebabkan oleh ketidakmampuan sel-sel kerucut (cone cell) pada retina mata untuk menangkap suatu spektrum warna tertentu sehingga objek yang terlihat bukan warna yang sesungguhnya (Nina Karina, 2007). \n          Penderita buta warna mungkin hanya bisa melihat beberapa gradasi warna, sementara sebagian besar orang yang normal dapat melihat ratusan warna. Gejala lainnya, sebagian penderita buta warna tidak dapat membedakan antara warna merah dan hijau, namun bisa melihat warna biru dan kuning dengan mudah. Sebagian orang bahkan tidak menyadari bahwa mereka mengalami buta warna sebelum menjalani tes penglihatan warna.\n"
+        android:textStyle="bold"
+        android:textSize="6pt"
+        android:textColor="#ffff" />
+
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

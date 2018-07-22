@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light"
+    tools:context="buta_warna.imk.kelompok12.MainActivity">
+
+    <ImageView
+        android:id="@+id/buku"
+        android:layout_marginTop="5dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginRight="5dp"
+        android:layout_width="170dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="20dp" />
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@id/tentang"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginRight="5dp"
+                android:onClick="onClickBuku"
+                android:layout_width="@dimen/d50"
+                android:layout_height="@dimen/d50"
+                android:src="@drawable/buku"
+                android:layout_marginBottom="20dp" />
+
+    <ImageView
+        android:id="@+id/tentang"
+        android:layout_marginTop="5dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:layout_marginRight="5dp"
+        android:onClick="onClickTentang"
+        android:layout_width="@dimen/d50"
+        android:layout_height="@dimen/d50"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/tentang"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentRight="true" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_centerHorizontal="true"
+                android:text="Test Buta Warna"
+                android:textColor="@color/primary_text"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/metode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Metode Ishihara"
+                android:textColor="@color/primary_text"
+                android:layout_below="@+id/title"
+                android:textSize="16sp" />
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="onClickTes"
+        android:src="@drawable/button" />
+
+    <TextView
+        android:id="@+id/tes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:text="MULAI TES!"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:background="@color/primary_light">
+
+        <ImageView
+            android:id="@+id/gKeluar"
+            android:layout_marginRight="5dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
+            android:onClick="onClickExit"
+            android:src="@drawable/keluar" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

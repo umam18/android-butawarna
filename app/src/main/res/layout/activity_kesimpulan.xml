@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light"
+    tools:context="buta_warna.imk.kelompok12.Kesimpulan">
+
+        <RelativeLayout
+            android:id="@+id/mLinearAnswer"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/but"
+                android:layout_height="80dp"
+                android:src="@drawable/button"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="HASIL"
+                android:textStyle="bold"
+                android:textSize="14pt"/>
+
+            <TextView
+                android:id="@+id/hasil"
+                android:layout_width="match_parent"
+                android:textColor="@color/primary_light"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:text="1"
+                android:textStyle="bold"
+                android:textSize="12pt"/>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mLinearAnswer">
+
+        <TextView
+            android:id="@+id/kesimpulan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="KESIMPULAN"
+            android:textAlignment="center"
+            android:textSize="@dimen/s32"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/conclusion"
+            android:layout_width="match_parent"
+            android:textColor="@color/primary_dark"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kesimpulan"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textSize="@dimen/s32"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/PlayAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/conclusion"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="Ingin Tes Lagi?"
+            android:textAlignment="center"
+            android:textSize="@dimen/s20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bawah"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_below="@id/middle">
+
+            <Button
+                android:id="@+id/ya"
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:onClick="ya"
+                android:text="IYA"
+                android:layout_weight="0.5" />
+
+            <Button
+                android:id="@+id/tidak"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:focusable="true"
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="tidak"
+                android:text="TIDAK" />
+        </LinearLayout>
+
+        </RelativeLayout>
+

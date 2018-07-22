@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="buta_warna.imk.kelompok12.FragmentPenyebab">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EE5A24">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/atas"
+        android:textColor="#ffff"
+        android:text="PENYEBAB"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_width="20dp"
+        android:id="@+id/kiri"
+        android:textColor="#ffff"
+        android:layout_below="@id/atas"
+        android:layout_height="match_parent"
+        />
+
+    <me.biubiubiu.justifytext.library.JustifyTextView
+        android:id="@+id/textView1"
+        android:layout_toRightOf="@+id/kiri"
+        android:layout_below="@id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="-5dp"
+        android:text="         Ada beberapa penyebab seseorang mengalami buta warna, di antaranya:
+\n1. Faktor Genetik
+\n          Kebanyakan penderita buta warna yang mengalaminya sejak lahir disebabkan oleh faktor genetik yang berikatan dengan kromosom X. Seorang ayah penderita buta warna tidak akan memiliki anak yang menderita buta warna kecuali pasangannya memiliki gen buta warna. Hal ini mungkin karena wanita lebih berperan dalam menjadi pembawa gen (carrier) yang akan mewarisi buta warna kepada anak. Penderita buta warna akibat faktor genetik juga jauh lebih sering terjadi pada pria dibandingkan wanita, walau terkadang kondisi ini dapat melewati satu generasi. Anak perempuan dipastikan mengidap buta warna jika kedua orang tua adalah pembawa gen buta warna.
+\n2. Penyakit
+\n          Terdapat sejumlah penyakit yang bisa menyebabkan buta warna, seperti penyakit Parkinson, penyakit Alzheimer, glaukoma, kanker darah (leukemia), diabetes, pecandu minuman beralkohol kronis, degenerasi makula, dan anemia sel sabit.
+\n3. Usia
+\n         Kemampuan seseorang untuk membedakan warna perlahan-lahan akan berkurang seiring pertambahan usia. Ini adalah hal yang alami dalam proses penuaan dan tidak perlu dicemaskan secara berlebihan.
+\n4. Bahan Kimia
+\n         Seseorang bisa mengalami buta warna jika terpapar bahan kimia beracun, misalnya di tempat kerja, seperti karbon disulfida dan pupuk.
+\n5. Efek Samping Obat Tertentu
+\n         Beberapa pengobatan berpotensi menyebabkan buta warna, seperti digoxin, phenytoin, klorokuin, dan sildenafil. Jika gangguan disebabkan oleh pengobatan, biasanya pandangan akan kembali normal setelah berhenti melakukan pengkonsumsian obat.
+\n"
+        android:textStyle="bold"
+        android:textSize="6pt"
+        android:textColor="#ffff" />
+
+    </RelativeLayout>
+</ScrollView>

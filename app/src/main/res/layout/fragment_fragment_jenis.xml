@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="buta_warna.imk.kelompok12.FragmentJenis">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2ECC71">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/atas"
+        android:text="JENIS"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffff"
+        android:layout_height="40dp"
+        android:fontFamily="Times New Roman"
+        />
+
+    <TextView
+        android:layout_width="15dp"
+        android:id="@+id/kiri"
+        android:textColor="#ffff"
+        android:layout_below="@id/atas"
+        android:layout_height="match_parent"
+        />
+
+    <me.biubiubiu.justifytext.library.JustifyTextView
+        android:id="@+id/textView1"
+        android:layout_toRightOf="@+id/kiri"
+        android:layout_below="@id/atas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="-10dp"
+        android:text="
+*Buta Warna Parsial*\n          Seseorang yang tidak bisa membedakan warna atau tingkat kecerahan suatu warna seperti merah dan hijau. Sebagian besar penderita buta warna masuk dalam kategori buta warna parsial. Terdapat 3 jenis buta warna parsial, diantaranya :
+\n1. Deutrinophia\n         Buta warna hijau. Warna merah terlihat kuning kecoklatan dan warna hijau sebagai cokelat pucat (beige).
+\n2. Protanophia\n         Buta warna merah. Warna merah akan terlihat sebagai hitam. Beberapa warna sperti jingga, kuning, dan hijau tampak seperti kuning.
+\n3. Tritanophia\n         Buta warna biru dan kuning. Warna biru tampak hijau dan kuning tampak seperti ungu. Buta warna ini juga sangat langka.
+\n\n*Buta Warna Total (Monochromacy)*
+\n          Pada penderita buta warna total, mereka hanya bisa mengenali warna hanya dua saja yaitu warna hitam dan warna putih. Terdapat 2 jenis dari buta warna total ini diantaranya :
+\n1. Monokromasi kerucut\n          Jenis buta warna ini terjadi akibat kegagalan fungsi dari 2 jenis sel kerucut. Untuk dapat melihat warna, diperlukan minimal 2 jenis sel kerucut agar otak dapat membandingkan 2 macam sinyal yang berbeda. Jika hanya 1 jenis sel kerucut yang bekerja maka proses pembandingan tersebut tidak berjalan sehingga warna tidak terlihat. Terdapat 3 jenis monokromasi tergantung sel kerucut yang masih bekerja, yaitu monokromasi sel kerucut merah, monokromasi sel kerucut hijau, dan monokromasi sel kerucut biru.
+\n2. Monokromasi batang\n          Jenis buta warna yang paling jarang dan paling berat. Pada buta warna ini, tidak terdapat sel kerucut sama sekali. Hanya terdapat sel batang yang bekerja sehingga dunia benar-benar terlihat sebagai hitam putih dan abu-abu. Pasien dengan monokromasi batang cenderung tidak nyaman ketika berada di lingkungan bercahaya terang.\n"
+        android:textStyle="bold"
+        android:textSize="6pt"
+        android:textColor="#ffff" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="buta_warna.imk.kelompok12">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="IMK Kelompok 12"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="buta_warna.imk.kelompok12.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="buta_warna.imk.kelompok12.MainActivity" />
+        <activity android:name="buta_warna.imk.kelompok12.TestActivity" />
+        <activity android:name="buta_warna.imk.kelompok12.ArticleActivity" />
+        <activity android:name="buta_warna.imk.kelompok12.AboutActivity" />
+        <activity android:name="buta_warna.imk.kelompok12.Kesimpulan"></activity>
+    </application>
+
+</manifest>
